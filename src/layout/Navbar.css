@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: #333333;
+  line-height: 1.5;
+}
+.mytop{
+background-color: #456edf;
+transform: translateY(-70px);
+}
+
+.mytopFixed{
+  background-color: transparent;
+  transform: translateY(0px);
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  }
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #456edf;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  border-bottom: #456edf 2px solid;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.specialized {
+  font-size: 16px;
+}
+
+
+.navbar.top {
+  background: transparent;
+}
+
+/* header */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+  background: url('/public/image/dasktopImge.jpeg') no-repeat center center/cover ;
+  height: 70vh;
+  position: relative;
+  color: #fff;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  background-color: #456edf;
+}
+
+.footer a {
+  color: #fff;
+}
+
+
+.footer a:hover {
+  color: #28a745;
+}
+
+.footer .social>* {
+  margin-right: 30px;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+}
